@@ -1,11 +1,9 @@
-import { Outlet } from 'react-router-dom';
+
 import {
-    Container,
     CssBaseline,
     AppBar,
     Toolbar,
     Typography,
-    Box
 } from '@mui/material';
 import { DecameronIcon } from '../assets/icons/DecameronIcon';
 import Footer from './Footer';

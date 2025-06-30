@@ -3,6 +3,7 @@ import Layout from './components/Layout';
 import ListHotels from './pages/Hotels/ListHotels';
 import HotelForm from './pages/Hotels/HotelForm';
 import HotelRooms from './pages/Rooms/HotelRooms';
+import NotFoundPage from './pages/NotFoundPage';
 
 function App() {
   return (
@@ -21,8 +22,8 @@ function App() {
             <Route path=":id/rooms" element={<HotelRooms />} />
           </Route>
           
-          {/* Ruta comodín */}
-          <Route path="*" element={<ListHotels />} />
+          {/* Ruta 404 */}
+          <Route path="*" element={<NotFoundPage />} />
         </Route>
       </Routes>
     </Router>
