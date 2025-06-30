@@ -3,12 +3,6 @@ export const DecameronIcon = () => (
 
         <rect width="150" height="60" rx="6" fill="url(#gradient)" />
 
-        <defs>
-            <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="0%">
-                <stop offset="0%" stop-color="#0066CC" />
-                <stop offset="100%" stop-color="#0099FF" />
-            </linearGradient>
-        </defs>
         <path d="M20,20 a12,12 0 1,0 24,0" fill="#FFCC00" stroke="#FF9900" stroke-width="1.5" />
 
         <path d="M50,28 Q58,18 66,28 Q74,38 82,28 Q90,18 98,28"
