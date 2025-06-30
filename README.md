@@ -1,71 +1,121 @@
-# Getting Started with Create React App
+# 🏨 Front Decameron
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Este es el frontend del proyecto Decameron, hecho con React + Vite.  
+A continuación encontrarás una guía paso a paso para ponerlo a funcionar en tu computador, como si te lo explicara tu abuelita 👵.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## 🧰 Requisitos antes de comenzar
 
-### `npm start`
+### 1. Tener instalado **Node.js** y **npm**
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+📦 Node.js es lo que hace funcionar el proyecto.  
+🛍️ npm es el gestor de herramientas (dependencias) del proyecto.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+🔗 Descárgalo desde aquí: [https://nodejs.org/](https://nodejs.org/)  
+> Elige la **versión LTS** ("Recommended for most users").
 
-### `npm test`
+Después de instalarlo, abre una terminal y verifica que estén funcionando:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```bash
+node -v
+npm -v
+```
 
-### `npm run build`
+---
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 🚀 Instrucciones paso a paso para ejecutar el proyecto
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### 1. Abrir la terminal
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- En **Windows**: abre “CMD” o “Símbolo del sistema”.
+- En **Mac**: abre “Terminal”.
+- En **Linux**: abre tu terminal favorita.
 
-### `npm run eject`
+### 2. Clonar el repositorio (traer el proyecto a tu computador)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+```bash
+git clone https://github.com/JohanFarfan25/front-decamero.git
+```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### 3. Entrar a la carpeta del proyecto
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+```bash
+cd front-decamero
+```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### 4. Instalar las dependencias
 
-## Learn More
+```bash
+npm install
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+📝 Este paso descarga todas las herramientas necesarias para que funcione el proyecto.  
+Puede tardar unos minutos dependiendo de tu conexión a internet.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### 5. Crear el archivo `.env`
 
-### Code Splitting
+Este archivo guarda configuraciones del entorno. Vamos a copiar el ejemplo:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+```bash
+cp .env.example .env
+```
 
-### Analyzing the Bundle Size
+🛠️ Luego abre el archivo `.env` y edita esta línea si es necesario:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+```env
+VITE_API_URL=http://localhost:8000
+```
 
-### Making a Progressive Web App
+🔁 Cámbiala si tu backend está en otra URL o en producción.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+### 6. Iniciar el proyecto
 
-### Advanced Configuration
+Ahora vamos a levantar el proyecto en modo desarrollo:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+```bash
+npm run dev
+```
 
-### Deployment
+Verás un mensaje como este:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+```
+VITE vX.X.X  ready in XX ms
 
-### `npm run build` fails to minify
+➜  Local:   http://localhost:5173/
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-# front-decameron
+Abre esa dirección en tu navegador y… ¡listo! Ya está funcionando el frontend de Decameron. 🎉
+
+---
+
+## 🧼 ¿Cómo lo apago?
+
+Para cerrar el servidor, ve a la terminal y presiona:
+
+```bash
+Ctrl + C
+```
+
+---
+
+## 🧑‍💻 Tecnologías utilizadas
+
+- ⚛️ React
+- ⚡ Vite
+- 🎨 Tailwind CSS
+- 🔧 JavaScript (ES6+)
+- 🧩 npm como gestor de dependencias
+
+---
+
+## 🆘 ¿Problemas?
+
+Si tienes dudas o algo no te funciona, puedes:
+
+1. Revisar los mensajes de error en la terminal.
+2. Escribirme por GitHub abriendo un "issue" en este repositorio.
+
+---
+
+## ✨ ¡Gracias por usar este proyecto!
